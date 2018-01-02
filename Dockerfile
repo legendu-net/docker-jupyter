@@ -19,7 +19,6 @@ RUN pip3 install \
 
 RUN mkdir /jupyter && chmod 777 /jupyter
 COPY scripts /scripts
-COPY settings /settings
 
 EXPOSE 8888
 
