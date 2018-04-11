@@ -11,11 +11,7 @@ RUN npm install -g n \
     && ln -sf /usr/local/n/versions/node/$nver/bin/node /usr/bin/nodejs \
     && ln -sf /usr/bin/nodejs /usr/bin/node
 
-RUN pip3 install \
-        jupyter nbdime \
-        ipywidgets \
-        qgrid \
-    && jupyter nbextension enable --py --sys-prefix widgetsnbextension  
+RUN pip3 install jupyter nbdime 
 
 RUN mkdir /jupyter && chmod 777 /jupyter
 COPY scripts /scripts
