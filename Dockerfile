@@ -1,6 +1,6 @@
-FROM dclong/python
+FROM dclong/conda
 
-RUN pip3 install jupyter 
+RUN conda install -y jupyter
 
 RUN mkdir /jupyter && chmod 777 /jupyter
 COPY scripts /scripts
