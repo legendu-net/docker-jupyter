@@ -4,7 +4,7 @@ RUN conda install -y -c conda-forge \
         jupyter \
         nbdime
 
-RUN mkdir /jupyter && chmod 777 /jupyter
+RUN mkdir /workdir && chmod 777 /workdir
 COPY scripts /scripts
 
 EXPOSE 8888
