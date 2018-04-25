@@ -59,7 +59,7 @@ docker run -d \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_PASSWORD=`id -un` \
-    -v /wwwroot:/jupyter \
+    -v /wwwroot:/workdir \
     dclong/jupyter
 ```
 
