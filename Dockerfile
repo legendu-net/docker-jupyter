@@ -1,4 +1,4 @@
-FROM dclong/conda
+FROM dclong/python:conda3
 
 RUN conda install -y -c conda-forge \
         jupyter \
