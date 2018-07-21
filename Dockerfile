@@ -1,8 +1,7 @@
 FROM dclong/python:conda3
 
 RUN conda install -y -c conda-forge \
-        jupyter \
-        nbdime
+        jupyter
 
 COPY scripts /scripts
 
