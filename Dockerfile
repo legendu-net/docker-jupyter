@@ -1,8 +1,6 @@
-FROM dclong/python:conda3
+FROM dclong/python
 
-RUN conda install -y -c conda-forge \
-        jupyter \
-        nbdime
+RUN pip3 install jupyter nbdime
 
 COPY scripts /scripts
 
