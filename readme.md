@@ -1,13 +1,21 @@
 # [dclong/jupyter](https://hub.docker.com/r/dclong/jupyter/)
 
-Jupyter Notebook (based on Python 3) in Docker. 
+Jupyter Notebook (with Python 3.5) in Docker. 
+**It is recommended that you use the image
+[dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)
+for data science related work.**
+Note: Python packages in this version are managed using pip.
+If you prefer managing Python packages using conda, 
+please use the **conda3** (corresponds to the conda3 tag) branch instead.
 
 ## Detailed Information 
 
-OS: the latest Ubuntu LTS  
+OS: Ubuntu 16.04  
 Desktop Environment: None  
 Remote Desktop: None  
-Kernels: Python 3 (with popular packages)  
+Jupyter Notebook: 5.6.0  
+Jupyter Kernels:  
+- Python 3.5.2 
 
 ## Usage in Linux/Unix
 
