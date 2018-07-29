@@ -1,6 +1,6 @@
 # [dclong/jupyter](https://hub.docker.com/r/dclong/jupyter/)
 
-Jupyter Notebook (with Python 3.5) in Docker. 
+Jupyter Notebook (with Miniconda 3) in Docker. 
 **It is recommended that you use the image
 [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)
 for data science related work.**
@@ -15,7 +15,7 @@ Desktop Environment: None
 Remote Desktop: None  
 Jupyter Notebook: 5.6.0  
 Jupyter Kernels:  
-- Python 3.5.2 
+- Python 3.6 
 
 
 ## Usage in Linux/Unix
