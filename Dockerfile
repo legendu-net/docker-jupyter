@@ -1,6 +1,6 @@
 FROM dclong/python
 
-RUN pip3 install jupyter
+RUN pip3 install jupyter nbdime
 
 COPY scripts /scripts
 
