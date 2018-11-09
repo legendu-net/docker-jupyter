@@ -1,6 +1,6 @@
 # [dclong/jupyter](https://hub.docker.com/r/dclong/jupyter/)
 
-Jupyter Notebook (with Python 3.5) in Docker. 
+Jupyter Notebook in Docker. 
 **It is recommended that you use the image
 [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)
 for data science related work.**
@@ -10,12 +10,12 @@ please use the **conda3** (corresponds to the conda3 tag) branch instead.
 
 ## Detailed Information 
 
-OS: Ubuntu 16.04  
+OS: Ubuntu 18.04  
 Desktop Environment: None  
 Remote Desktop: None  
 Jupyter Notebook: 5.6.0  
 Jupyter Kernels:  
-- Python 3.5.2 
+- Python 3.6.6 
 
 ## Usage in Linux/Unix
 
@@ -67,7 +67,7 @@ docker run -d \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_PASSWORD=`id -un` \
-    -v /wwwroot:/workdir \
+    -v /workdir:/workdir \
     dclong/jupyter
 ```
 
