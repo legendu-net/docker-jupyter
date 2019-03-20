@@ -9,7 +9,3 @@ chown -R $DOCKER_USER:$DOCKER_GROUP $HOME/.jupyter
 # .local directory
 mkdir -p $HOME/.local/share/jupyter/runtime
 chown -R $DOCKER_USER:$DOCKER_GROUP $HOME/.local
-
-# install and configure SpaceVim
-bash /scripts/install_space_vim.sh && nvim --headless +'call dein#install()' +qall
-
