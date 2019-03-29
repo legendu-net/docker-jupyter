@@ -6,4 +6,4 @@ COPY scripts /scripts
 
 EXPOSE 8888
 
-ENTRYPOINT ["/scripts/init.sh"]
+ENTRYPOINT ["/scripts/sys/init.sh"]
