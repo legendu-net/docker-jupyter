@@ -25,7 +25,6 @@ docker run -d \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_PASSWORD=`id -un` \
     -e DOCKER_GROUP_ID=`id -g` \
-    -e DOCKER_ADMIN_USER=`id -un` \
     -v `pwd`:/workdir \
     -v `dirname $HOME`:/home_host \
     dclong/jupyter
@@ -43,7 +42,6 @@ docker run -d \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_PASSWORD=`id -un` \
     -e DOCKER_GROUP_ID=`id -g` \
-    -e DOCKER_ADMIN_USER=`id -un` \
     -v `pwd`:/workdir \
     -v `dirname $HOME`:/home_host \
     dclong/jupyter
