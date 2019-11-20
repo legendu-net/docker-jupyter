@@ -1,7 +1,22 @@
 #!/usr/bin/env python3
-# encoding: utf-8
-import json
-from notebook import notebookapp
+import getpass
+import subprocess as sp
+import psutil
 
-servers = list(notebookapp.list_running_servers())
-print(json.dumps(servers, indent=4))
+
+def get_jupyterlab_user():
+    for proc in psutil.process_iter():
+        if proc.name() == "jupyter-lab":
+            return proc.username()
+    raise ProcessLookupError("No process named jupyter-lab.")
+
+
+def main():
+    cmd = ["/scripts/sys/list_jupyter.py"]
+    if getpass.getuser() == 'root':
+        cmd = ["su", get_jupyterlab_user()] + cmd
+    sp.run(cmd, check=True)
+
+
+if __name__ == '__main__':
+    main()
