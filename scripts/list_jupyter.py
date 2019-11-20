@@ -6,7 +6,7 @@ import psutil
 
 def get_jupyterlab_user():
     for proc in psutil.process_iter():
-        if proc.name() == "jupyter-lab":
+        if proc.name() in ("jupyter", "jupyter-lab"):
             return proc.username()
     raise ProcessLookupError("No process named jupyter-lab.")
 
