@@ -14,7 +14,7 @@ def get_jupyterlab_user():
 def main():
     cmd = ["/scripts/sys/list_jupyter.py"]
     if getpass.getuser() == 'root':
-        cmd = ["su", get_jupyterlab_user()] + cmd
+        cmd = ["su", get_jupyterlab_user(), "-c"] + cmd
     sp.run(cmd, check=True)
 
 
