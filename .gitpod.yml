@@ -2,3 +2,5 @@ image: dclong/jupyterhub-ds
 tasks:
   - command: nvim --headless +"call dein#install()" +qall
   - command: xinstall svim -ic
+ports:
+  - port: 8888
