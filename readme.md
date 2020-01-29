@@ -6,6 +6,10 @@ Jupyter Notebook in Docker.
 for data science related work.**
 Note: Python packages in this version are managed using pip instead of conda.
 
+## Prerequisite
+You need to [install Docker](http://www.legendu.net/en/blog/docker-installation/) before you use this Docker image.
+
+
 ## Usage in Linux/Unix
 
 Please refer to the Section
