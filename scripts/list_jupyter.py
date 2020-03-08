@@ -14,7 +14,7 @@ def get_jupyter_user() -> bytes:
 
 def main():
     cmd = ["/scripts/sys/list_jupyter.py"]
-    if getpass.getuser() == b"root":
+    if getpass.getuser() == "root":
         cmd = ["su", get_jupyter_user(), "-c"] + cmd
     sp.run(cmd, check=True)
 
