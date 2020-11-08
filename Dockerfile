@@ -2,7 +2,7 @@
 FROM dclong/python
 # GIT: https://github.com/dclong/docker-python.git
 
-RUN pip3 install --no-cache-dir tornado jupyter nbdime jupytext
+RUN pip3 install --no-cache-dir tornado jupyter nbdime
 
 # Python 3.7 Kernel
 RUN /opt/pyenv/versions/3.7.8/bin/python -m pip install ipykernel \
