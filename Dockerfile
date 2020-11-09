@@ -5,8 +5,8 @@ FROM dclong/python
 RUN pip3 install --no-cache-dir tornado jupyter nbdime
 
 # Python 3.7 Kernel
-RUN /opt/pyenv/versions/3.7.8/bin/python -m pip install ipykernel \
-    && /opt/pyenv/versions/3.7.8/bin/python -m ipykernel install --name python3.7 --display-name "Python 3.7"
+RUN /opt/pyenv/versions/3.7.*/bin/python -m pip install ipykernel \
+    && /opt/pyenv/versions/3.7.*/bin/python -m ipykernel install --name python3.7 --display-name "Python 3.7"
 
 COPY scripts /scripts
 
